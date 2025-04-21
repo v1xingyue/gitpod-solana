@@ -1,0 +1,10 @@
+tasks:
+  - name: Init solana 
+    init: curl --proto '=https' --tlsv1.2 -sSfL https://solana-install.solana.workers.dev | bash
+    command: |
+      solana --version 
+      anchor --version 
+
+vscode:
+  extensions:
+    - rust-lang.rust-analyzer
